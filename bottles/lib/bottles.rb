@@ -3,6 +3,12 @@
 class Bottles
     def song
         verses(99, 0)
+        sing
+
+    end
+
+    def sing
+      verses(99, 0)
     end
 
     def verses(starting, ending)
@@ -104,7 +110,7 @@ describe Bottles do
     end
 
     it 'can sing the whole song' do
-      skip
+
       expect(song.sing).to eq(song.verses(99, 0))
     end
   end
