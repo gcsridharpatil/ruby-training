@@ -17,10 +17,7 @@ class Bottles
 
   def verse(n)
     if n == 6
-      '6 bottles of beer on the wall, ' \
-        "6 bottles of beer.\n" \
-        'Take one down and pass it around, ' \
-        "5 bottles of beer on the wall.\n\n"
+      "#{bottle(n)} of beer on the wall, #{bottle(n)} of beer.\nTake one down and pass it around, #{bottle(n - 1)} of beer on the wall.\n\n"
     elsif plural?(n)
       "#{bottle(n)} of beer on the wall, #{bottle(n)} of beer.\nTake one down and pass it around, #{bottle(n - 1)} of beer on the wall.\n"
     elsif singular?(n)
