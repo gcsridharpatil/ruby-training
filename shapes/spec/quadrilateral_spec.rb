@@ -3,21 +3,6 @@
 require 'quadrilateral' # RSpec automatically adds `lib/` to the LOAD_PATH
 # edit lib/quadrilateral.rb to fix these tests
 
-def quadrilateral(a, b, c, d)
-  # WRITE THIS CODE
-  array = []
-  if (a == b) && (a == c) && (b == c)
-    [:square, :rectangle]
-  elsif (a == b) || (a == c) || (a == d)
-    [:parallelogram, :rhombus]
-  elsif (a != b) && (a != c) && (a != d)
-    [:quadrilateral]
-  else (b != d) && (a != d)
-  # else (a == b) || (a != c) || (a != d)
-    [:quadrilateral]
-  end
-end
-
 RSpec.describe 'quadrilateral types' do
   context 'when valid' do
     it 'is square or rectangle when all angles are the same' do
