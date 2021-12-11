@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 class Bottles
   def song
     verses(99, 0)
