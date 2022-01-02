@@ -10,7 +10,7 @@ describe LCD do
 
       it 'renders a widened 8' do
         expected = <<~SQUIGGLY_HEREDOC
-           __ 
+           __
           |__|
           |__|
         SQUIGGLY_HEREDOC
@@ -20,7 +20,7 @@ describe LCD do
 
       it 'renders a widened 913' do
         expected = <<~SQUIGGLY_HEREDOC
-           ____        ____ 
+           ____        ____
           |____|     | ____|
            ____|     | ____|
         SQUIGGLY_HEREDOC
@@ -35,7 +35,7 @@ describe LCD do
 
       it 'renders a heightened 2' do
         expected = <<~SQUIGGLY_HEREDOC
-             
+
           | |
           | |
           |_|
@@ -49,7 +49,7 @@ describe LCD do
 
       it 'renders a heightened 87' do
         expected = <<~SQUIGGLY_HEREDOC
-           _  _ 
+           _  _
           | |  |
           | |  |
           | |  |
@@ -70,7 +70,7 @@ describe LCD do
 
       it 'renders a heightened AND widened 8' do
         expected = <<~SQUIGGLY_HEREDOC
-           __ 
+           __
           |  |
           |  |
           |__|
@@ -84,7 +84,7 @@ describe LCD do
 
       it 'renders a heightened AND widened 47189' do
         expected = <<~SQUIGGLY_HEREDOC
-                             _______ 
+                             _______
           |       |        ||       |
           |       |        ||       |
           |       |        ||       |
@@ -106,7 +106,7 @@ describe LCD do
 
       it 'renders a heightened AND widened abcdef' do
         expected = <<~SQUIGGLY_HEREDOC
-           ______                  ______  ______         
+           ______                  ______  ______
                  ||               |       |              |
                  ||               |       |              |
                  ||               |       |              |
