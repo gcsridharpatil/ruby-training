@@ -18,8 +18,13 @@ RSpec.describe 'an introduction to ruby' do
       expect(actual).to eq expected
     end
 
+<<<<<<< HEAD
     it 'will ask you to fill in values' do
       expect(1 + 1).to eq(2)
+=======
+    it 'allows you to fill in values' do
+      expect(1 + 1).to eq(__)
+>>>>>>> upstream/main
     end
   end
 end
