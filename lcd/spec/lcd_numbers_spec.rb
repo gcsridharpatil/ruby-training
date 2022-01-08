@@ -10,7 +10,7 @@ describe LCD do
 
     it 'renders a 0' do
       expected = <<~SQUIGGLY_HEREDOC
-         _ 
+         _
         | |
         |_|
       SQUIGGLY_HEREDOC
@@ -20,8 +20,8 @@ describe LCD do
 
     it 'renders a 6' do
       expected = <<~SQUIGGLY_HEREDOC
-         _ 
-        |_ 
+         _
+        |_
         |_|
       SQUIGGLY_HEREDOC
 
@@ -30,7 +30,7 @@ describe LCD do
 
     it 'renders an 8' do
       expected = <<~SQUIGGLY_HEREDOC
-         _ 
+         _
         |_|
         |_|
       SQUIGGLY_HEREDOC
@@ -46,7 +46,7 @@ describe LCD do
 
     it 'renders 487' do
       expected = <<~SQUIGGLY_HEREDOC
-            _  _ 
+            _  _
         |_||_|  |
           ||_|  |
       SQUIGGLY_HEREDOC
@@ -56,7 +56,7 @@ describe LCD do
 
     it 'renders 9913' do
       expected = <<~SQUIGGLY_HEREDOC
-         _  _     _ 
+         _  _     _
         |_||_|  | _|
          _| _|  | _|
       SQUIGGLY_HEREDOC
@@ -66,7 +66,7 @@ describe LCD do
 
     it 'renders all digits' do
       expected = <<~SQUIGGLY_HEREDOC
-         _  _  _  _  _     _  _     _ 
+         _  _  _  _  _     _  _     _
         |_||_|  ||_ |_ |_| _| _|  || |
          _||_|  ||_| _|  | _||_   ||_|
       SQUIGGLY_HEREDOC
