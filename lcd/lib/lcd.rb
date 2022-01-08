@@ -28,7 +28,9 @@ class LCD
     @digit = number
     @lcdstates = %w[HL VL VL]
     @lcddisplaydata = {
-      0 => [1, 3, 4]
+      0 => [1, 3, 4],
+      6 => [1, 2, 4],
+      8 => [1, 4, 4]
     }
   end
 
@@ -57,7 +59,7 @@ class LCD
       when 1
         return " "+ "|"
       when 2
-        return "|_" + " "
+        return "|_"
       when 3
         return "| |"
       when 4
