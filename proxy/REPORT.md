@@ -1,4 +1,4 @@
-# Report Grade - Dice Games
+# Report Grade - Proxy
 
 Report for Sridhar, for the Proxy project
 
