@@ -1,4 +1,4 @@
-# Report Grade - Dice Games
+# Report Grade - LCD
 
 Report for Sridhar, for the LCD project
 
