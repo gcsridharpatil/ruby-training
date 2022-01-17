@@ -1,24 +1,26 @@
 # frozen_string_literal: true
 
-class Proxy
-    def initialize( proxy_object )
-      @proxy_object = proxy_object
+  class Proxy
+    def initialize(target_object)
+      @object = target_object
+      @messages = []
     end
 
     def method_missing(method_name, *args, &block)
-      if @proxy_object.respond_to?(method_name)
-        @proxy_object.send(method_name, *args, &block)
-      else
-        super(method_name, *args, &block)
-      end
+      @messages.push method_name unless method_name == :messages
+      @object.send method_name, *args, &block
     end
-
-    def respond_to?(method_name, include_private = false)
-      if method_name == @proxy_object.methods
-        true
-      else
-        super(method_name, include_private)
-      end
+    def messages
+      @messages
     end
-
+    def called? target
+      @messages.include? target
+    end
+    def number_of_times_called target
+      result = 0
+      @messages.each do |i|
+        result += 1 if i == target
+      end
+      result
+    end
   end
